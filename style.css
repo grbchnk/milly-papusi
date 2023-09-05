@@ -105,6 +105,10 @@ body {
   font-size: 14px;
 }
 
+.desc span {
+  transform: scale(1, 1);
+}
+
 .button-inner {
   display: flex;
   flex-direction: column;
