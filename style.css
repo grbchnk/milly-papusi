@@ -83,7 +83,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: calc(calc(var(--vh, 1vh) * 100) - 20vh - 50px - 5vh);
 }
 
@@ -134,7 +134,7 @@ body {
 .border {
   position: relative;
   width: 100%;
-  margin: 10px 0px;
+  margin: 6px 0px;
 }
 
 .border::after {
@@ -193,11 +193,11 @@ body {
 
   .inner {
     height: calc(calc(var(--vh, 1vh) * 100) - var(--img-width) - var(--pixels));
-    padding-bottom: 5vh;
+    padding-bottom: 4vh;
   }
 
   .title {
-    font-size: 46px;
+    font-size: 44px;
   }
 
   .desc {
@@ -209,8 +209,8 @@ body {
   }
 
   .button {
-    padding: 11px;
-    font-size: 11px;
+    padding: 10px;
+    font-size: 10px;
   }
 
   @media (max-height: 800px) {
