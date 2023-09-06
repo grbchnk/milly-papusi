@@ -228,3 +228,58 @@ body {
     font-size: 15px;
   }
 }
+
+@media (min-height: 800px) and (min-width: 600px) {
+  .header__background {
+    height: 18vh;
+  }
+  .inner {
+    height: calc(calc(var(--vh, 1vh) * 100) - 23vh - 5vh - 4vh);
+  }
+  .gallery-pc {
+    perspective: 100vh;
+    padding: 2.8vh 0px 4vh;
+    gap: 1.8vh;
+  }
+  .gallery__img {
+    border-radius: 3.5vh;
+  }
+  .gallery__img-pc:hover {
+    margin-top: -1vh;
+  }
+  .button-inner {
+    gap: 1vh;
+  }
+  .title {
+    font-size: 5vh;
+  }
+
+  .desc {
+    font-size: 1.9vh;
+  }
+
+  .button-inner {
+    width: 40vh;
+  }
+
+  .button {
+    border-radius: 1.5vh;
+    padding: 2vh;
+    font-size: 1.8vh;
+  }
+
+  .border {
+    margin: 2vh 0px;
+  }
+
+  .button:hover {
+    letter-spacing: 0.15vh;
+  }
+
+  .online {
+    padding: 0.4vh 1vh;
+    font-size: 1.2vh;
+    border-radius: 3.7vh;
+    bottom: 3vh;
+  }
+}

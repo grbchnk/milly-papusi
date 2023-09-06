@@ -56,9 +56,13 @@ imag2.forEach(function (image) {
   image.addEventListener("click", function (event) {
     let smiley = document.createElement("span")
     smiley.textContent = randomSmiley()
-    smiley.style.top = randomPosition(window.innerHeight, 0) - 100 + "px"
-    smiley.style.left = randomPosition(window.innerWidth - 100, 0) + 50 + "px"
-    smiley.style.fontSize = randomSize() + "px"
+    smiley.style.top =
+      randomPosition(window.innerHeight, 0) - window.innerHeight / 5 + "px"
+    smiley.style.left =
+      randomPosition(window.innerWidth - window.innerHeight / 7, 0) +
+      window.innerHeight / 14 +
+      "px"
+    smiley.style.fontSize = randomSize() + "vh"
     smiley.classList.add("smiley")
 
     document.body.appendChild(smiley)
@@ -83,5 +87,5 @@ function randomPosition(max, size) {
 }
 
 function randomSize() {
-  return Math.floor(Math.random() * 30) + 20
+  return Math.floor(Math.random() * 5) + 5
 }
