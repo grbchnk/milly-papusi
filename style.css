@@ -175,6 +175,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .inner {
+    height: auto;
+  }
   .header__background {
     height: 150px;
   }
@@ -208,8 +211,8 @@ body {
   }
 
   .button-inner {
-    width: 80%;
     margin-bottom: 30px;
+    width: 80%;
   }
 
   .button {
