@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("/reset.css");
 * {
-  margin: 0;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 :root {
@@ -211,8 +218,8 @@ body {
   }
 
   .button-inner {
-    margin-bottom: 30px;
-    width: 80%;
+    margin-bottom: 40px;
+    width: 85%;
   }
 
   .button {
